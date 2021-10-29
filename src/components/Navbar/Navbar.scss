@@ -1,0 +1,14 @@
+// ------ Navbar ------
+@import "../../Theme.scss";
+
+.navbar {
+  width: 100%;
+  height: 60px;
+  //   background-color: lightgreen;
+  background-color: $white;
+  @include flexbox;
+  border-bottom: $border-light;
+  img {
+    height: 20px;
+  }
+}

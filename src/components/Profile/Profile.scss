@@ -1,0 +1,71 @@
+// ------ Profile ------
+@import "../../Theme.scss";
+
+.profile {
+  width: 100%;
+  height: 2000px;
+//   background-color: lightgreen;
+
+  .profile__banner {
+    width: 100%;
+    height: 300px;
+    // background-color: lightseagreen;
+    img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+    }
+  }
+
+  .profile__image {
+    width: 100%;
+    height: 90px;
+    // background-color: lightcoral;
+    position: relative;
+    @include flexbox;
+    img {
+      position: absolute;
+      top: -75px;
+      height: 150px;
+      width: 150px;
+      border-radius: 50%;
+    }
+  }
+
+  .profile__details {
+    width: 100%;
+    min-height: 60px;
+    // background-color: lightcyan;
+
+    .profile__details__name {
+    //   background-color: lightseagreen;
+      min-height: 30px;
+      @include flexbox;
+      p {
+        margin: 0px;
+        font-size: $font-large;
+        color: $blue;
+      }
+    }
+    .profile__details__userId {
+    //   background-color: lightpink;
+      min-height: 25px;
+      @include flexbox;
+      p {
+        margin: 0px;
+        font-size: $font-small;
+        color: $dark-grey;
+      }
+    }
+    .profile__details__createdDate {
+    //   background-color: lightcoral;
+      min-height: 25px;
+      @include flexbox;
+      p {
+        margin: 0px;
+        font-size: $font-extra-small;
+        color: $dark-grey;
+      }
+    }
+  }
+}
