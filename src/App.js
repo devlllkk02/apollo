@@ -1,13 +1,14 @@
 // ------ App ------
 import "./App.scss";
-import ProfileCollection from "./components/Profile/ProfileCollection/ProfileCollection";
 
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+
+import ProfileCollection from "./components/Profile/ProfileCollection/ProfileCollection";
 
 function App() {
   return (
     <div className="App">
       <ProfileCollection />
-
     </div>
   );
 }
