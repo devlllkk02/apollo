@@ -2,6 +2,8 @@
 import React, { useState } from "react";
 import "./ProfileCreated.scss";
 
+import { FilterList } from "@material-ui/icons";
+
 import Navbar from "../../Navbar/Navbar";
 import ProfileHeader from "../ProfileHeader/ProfileHeader";
 import ProfileNavigation from "../ProfileNavigation/ProfileNavigation";
@@ -9,7 +11,7 @@ import ProfileSidebar from "../ProfileSidebar/ProfileSidebar";
 import ItemCard from "../ItemCard/ItemCard";
 import Footer from "../../Footer/Footer";
 function ProfileCollection() {
-  const [sideMenu, SetSideMenu] = useState(true);
+  const [sideMenu, SetSideMenu] = useState(false);
 
   const SetSideMenuStyles = () => {
     if (sideMenu) {
@@ -28,6 +30,31 @@ function ProfileCollection() {
       <Navbar />
       <ProfileHeader />
       <ProfileNavigation page="created" />
+      {/* Profile Filter */}
+      <div className="profileCreated__filter">
+        <div className="profileCreated__filter__container">
+          <div onClick={() => SetSideMenu(!sideMenu)}>
+            <FilterList style={{ fontSize: "20px", color: "#575757" }} />
+          </div>
+        </div>
+        <div
+          className="profileCreated__filter__sidebar"
+          style={
+            !sideMenu
+              ? {
+                  opacity: "0%",
+                  transform: "translateX(-1000px)",
+                  transition: "all 0.5s ease-in-out",
+                }
+              : {
+                  transform: "translateX(0px)",
+                  transition: "all 0.5s ease-in-out",
+                }
+          }
+        >
+          <ProfileSidebar sideMenu={sideMenu} SetSideMenu={SetSideMenu} />
+        </div>
+      </div>
       {/* Profile Body */}
       <div className="profileCreated__body">
         <div className="profileCreated__sidebar" style={SetSideMenuStyles()}>

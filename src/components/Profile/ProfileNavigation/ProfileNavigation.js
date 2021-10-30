@@ -25,7 +25,9 @@ function ProfileNavigation({ page }) {
         <div className="profile__navigation__collection">
           <div className="profile__navigation__collection__content">
             <div className="profile__navigation__collection__icon">
-              <Apps style={{ fontSize: "18px", color: "#575757" }} />
+              <Link to="/" style={{ textDecoration: "none" }}>
+                <Apps style={{ fontSize: "18px", color: "#575757" }} />
+              </Link>
             </div>
             <div className="profile__navigation__collection__text">
               <Link to="/" style={{ textDecoration: "none" }}>
@@ -45,7 +47,9 @@ function ProfileNavigation({ page }) {
         <div className="profile__navigation__created">
           <div className="profile__navigation__created__content">
             <div className="profile__navigation__created__icon">
-              <AddBox style={{ fontSize: "18px", color: "#575757" }} />
+              <Link to="/created" style={{ textDecoration: "none" }}>
+                <AddBox style={{ fontSize: "18px", color: "#575757" }} />
+              </Link>
             </div>
             <div className="profile__navigation__created__text">
               <Link to="/created" style={{ textDecoration: "none" }}>
@@ -65,7 +69,9 @@ function ProfileNavigation({ page }) {
         <div className="profile__navigation__favourite">
           <div className="profile__navigation__favourite__content">
             <div className="profile__navigation__favourite__icon">
-              <Favorite style={{ fontSize: "18px", color: "#575757" }} />
+              <Link to="/favourite" style={{ textDecoration: "none" }}>
+                <Favorite style={{ fontSize: "18px", color: "#575757" }} />
+              </Link>
             </div>
             <div className="profile__navigation__favourite__text">
               <Link to="/favourite" style={{ textDecoration: "none" }}>
