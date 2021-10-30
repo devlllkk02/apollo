@@ -33,7 +33,10 @@ function ProfileCollection() {
       {/* Profile Filter */}
       <div className="profileCollection__filter">
         <div className="profileCollection__filter__container">
-          <div onClick={() => SetSideMenu(!sideMenu)}>
+          <div
+            className="profileCollection__filter__container__icon"
+            onClick={() => SetSideMenu(!sideMenu)}
+          >
             <FilterList style={{ fontSize: "20px", color: "#575757" }} />
           </div>
         </div>

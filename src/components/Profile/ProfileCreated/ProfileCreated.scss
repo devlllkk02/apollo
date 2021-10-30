@@ -20,7 +20,11 @@
       margin: 0px auto;
       @include flexbox;
       justify-content: flex-end;
-      cursor: pointer;
+
+      .profileCreated__filter__container__icon {
+        // background-color: lightgreen;
+        cursor: pointer;
+      }
     }
     .profileCreated__filter__sidebar {
       // background-color: lightblue;
