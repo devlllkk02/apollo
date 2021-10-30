@@ -1,24 +1,23 @@
 // ------ Profile Navigation ------
-import { AddBox, Apps, Favorite, GridOn } from "@material-ui/icons";
 import React from "react";
 import "./ProfileNavigation.scss";
 
+import { Link } from "react-router-dom";
+import { AddBox, Apps, Favorite } from "@material-ui/icons";
+
 const StylesNavBorder = (Page, currentPage) => {
-  if (Page == "collection" && currentPage == "collection") {
+  if (Page === "collection" && currentPage === "collection") {
     return { backgroundColor: "#3cd0ff" };
   }
-  if (Page == "created" && currentPage == "created") {
+  if (Page === "created" && currentPage === "created") {
     return { backgroundColor: "#3cd0ff" };
   }
-  if (Page == "favourite" && currentPage == "favourite") {
+  if (Page === "favourite" && currentPage === "favourite") {
     return { backgroundColor: "#3cd0ff" };
   }
 };
 
 function ProfileNavigation({ page }) {
-  {
-    console.log(page);
-  }
   return (
     <div className="profile__navigation">
       <div className="profile__navigation__container">
@@ -29,7 +28,9 @@ function ProfileNavigation({ page }) {
               <Apps style={{ fontSize: "18px", color: "#575757" }} />
             </div>
             <div className="profile__navigation__collection__text">
-              <p>Collection</p>
+              <Link to="/" style={{ textDecoration: "none" }}>
+                <p>Collection</p>
+              </Link>
             </div>
             <div className="profile__navigation__collection__amount">
               <p>07</p>
@@ -47,7 +48,9 @@ function ProfileNavigation({ page }) {
               <AddBox style={{ fontSize: "18px", color: "#575757" }} />
             </div>
             <div className="profile__navigation__created__text">
-              <p>Created</p>
+              <Link to="/created" style={{ textDecoration: "none" }}>
+                <p>Created</p>
+              </Link>
             </div>
             <div className="profile__navigation__created__amount">
               <p>18</p>
@@ -65,7 +68,9 @@ function ProfileNavigation({ page }) {
               <Favorite style={{ fontSize: "18px", color: "#575757" }} />
             </div>
             <div className="profile__navigation__favourite__text">
-              <p>Favourite</p>
+              <Link to="/favourite" style={{ textDecoration: "none" }}>
+                <p>Favourite</p>
+              </Link>
             </div>
             <div className="profile__navigation__favourite__amount">
               <p>00</p>

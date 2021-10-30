@@ -1,18 +1,18 @@
-// ------ Profile Collection ------
+// ------ Profile Favourite ------
 @import "../../../Theme.scss";
 
-.profileCollection {
+.profileFavourite {
   width: 100%;
   // height: 2000px;
   // background-color: lightgreen;
 
-  .profileCollection__body {
+  .profileFavourite__body {
     width: 100%;
     min-height: 800px;
-   
+
     // background-color: coral;
     @include flexbox;
-    .profileCollection__sidebar {
+    .profileFavourite__sidebar {
       width: 400px;
       min-height: 800px;
       // background-color: lightblue;
@@ -20,7 +20,7 @@
       align-self: flex-start;
       // position: fixed;
     }
-    .profileCollection__content {
+    .profileFavourite__content {
       width: 100%;
       padding-top: 20px;
       min-height: 800px;
@@ -28,17 +28,28 @@
       padding-bottom: 20px;
       // background-color: lightgoldenrodyellow;
 
-      .profileCollection__content__container {
+      .profileFavourite__content__container {
         width: 95%;
-        min-height: 800px;
+        min-height: 300px;
         margin: 0px auto;
         // background-color: lightsalmon;
+        border: $border-light;
 
-        display: grid;
-        grid-template-columns: repeat(auto-fill, 270px);
-        grid-row-gap: 20px;
-        grid-column-gap: 20px;
-        justify-content: space-between;
+        // display: grid;
+        // grid-template-columns: repeat(auto-fill, 270px);
+        // grid-row-gap: 20px;
+        // grid-column-gap: 20px;
+        // justify-content: space-between;
+
+        @include flexbox;
+        // align-items: flex-start;
+
+        p {
+          margin: 0px;
+          color: $dark-grey;
+        //   text-transform: uppercase;
+          font-size: $font-small;
+        }
       }
     }
   }
@@ -50,10 +61,10 @@
 
 // MAX-WIDTH : 900px
 @media (max-width: "900px") {
-  .profileCollection {
-    .profileCollection__body {
-      .profileCollection__content {
-        .profileCollection__content__container {
+  .profileFavourite {
+    .profileFavourite__body {
+      .profileFavourite__content {
+        .profileFavourite__content__container {
           grid-template-columns: 100%;
         }
       }

@@ -1,18 +1,18 @@
-// ------ Profile Collection ------
+// ------ Profile Created ------
 @import "../../../Theme.scss";
 
-.profileCollection {
+.profileCreated {
   width: 100%;
   // height: 2000px;
   // background-color: lightgreen;
 
-  .profileCollection__body {
+  .profileCreated__body {
     width: 100%;
     min-height: 800px;
    
     // background-color: coral;
     @include flexbox;
-    .profileCollection__sidebar {
+    .profileCreated__sidebar {
       width: 400px;
       min-height: 800px;
       // background-color: lightblue;
@@ -20,7 +20,7 @@
       align-self: flex-start;
       // position: fixed;
     }
-    .profileCollection__content {
+    .profileCreated__content {
       width: 100%;
       padding-top: 20px;
       min-height: 800px;
@@ -28,7 +28,7 @@
       padding-bottom: 20px;
       // background-color: lightgoldenrodyellow;
 
-      .profileCollection__content__container {
+      .profileCreated__content__container {
         width: 95%;
         min-height: 800px;
         margin: 0px auto;
@@ -50,10 +50,10 @@
 
 // MAX-WIDTH : 900px
 @media (max-width: "900px") {
-  .profileCollection {
-    .profileCollection__body {
-      .profileCollection__content {
-        .profileCollection__content__container {
+  .profileCreated {
+    .profileCreated__body {
+      .profileCreated__content {
+        .profileCreated__content__container {
           grid-template-columns: 100%;
         }
       }

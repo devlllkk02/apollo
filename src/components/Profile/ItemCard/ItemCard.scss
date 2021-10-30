@@ -1,0 +1,119 @@
+// ------ Item Card ------
+@import "../../../Theme.scss";
+
+.itemCard {
+  width: 270px;
+  height: 390px;
+  //   padding: 10px;
+  border: $border-light;
+  //   border-radius: 5px;
+
+  //   background-color: lightgreen;
+
+  .itemCard__image {
+    height: 250px;
+    width: 250px;
+    padding: 10px;
+
+    .itemCard__image__container {
+      height: 250px;
+      width: 250px;
+      overflow: hidden;
+      img {
+        height: 250px;
+        overflow: hidden;
+        width: 250px;
+        object-fit: cover;
+        object-position: center;
+        overflow: hidden;
+        transition: all 0.5s ease-in-out;
+        &:hover {
+          transform: scale(1.05);
+        }
+      }
+    }
+  }
+
+  .itemCard__details {
+    width: 250px;
+    margin: 0px auto;
+    height: 40px;
+    // background-color: lightpink;
+    @include flexbox;
+    .itemCard__details__category {
+      height: 100%;
+      width: 175px;
+      //   background-color: lightgoldenrodyellow;
+      @include flexbox;
+      justify-content: flex-start;
+      p {
+        margin: 0px;
+        color: $dark-grey;
+        font-size: $font-small;
+      }
+    }
+    .itemCard__details__price {
+      height: 100%;
+      width: 75px;
+      //   background-color: lightcoral;
+      @include flexbox;
+      justify-content: flex-end;
+      p {
+        margin: 0px;
+        color: $dark-grey;
+        font-size: $font-small;
+      }
+    }
+  }
+  .itemCard__date {
+    width: 270px;
+    margin: 0px auto;
+    height: 30px;
+    // background-color: lightseagreen;
+    @include flexbox;
+    justify-content: flex-end;
+    box-shadow: 0px 3px 2px -2px rgba($dark-grey, 0.2);
+    p {
+      margin: 0px;
+      color: $dark-grey;
+      font-size: $font-extra-small;
+      padding-right: 10px;
+    }
+  }
+  .itemCard__buyNow {
+    width: 100%;
+    height: 40px;
+    // background-color: lightpink;
+    @include flexbox;
+    .itemCard__buyNow__text {
+      width: 125px;
+      height: 100%;
+      //   background-color: lightblue;
+      @include flexbox;
+      justify-content: flex-start;
+      p {
+        margin: 0px;
+        color: $dark-grey;
+        font-size: $font-small;
+      }
+    }
+    .itemCard__buyNow__icon {
+      width: 125px;
+      height: 100%;
+      //   background-color: coral;
+      @include flexbox;
+      justify-content: flex-end;
+    }
+  }
+}
+
+//Media Queries
+
+// ----- WIDTH -----
+
+// MAX-WIDTH : 900px
+@media (max-width: "900px") {
+  .itemCard {
+    margin: 0px auto;
+  }
+}

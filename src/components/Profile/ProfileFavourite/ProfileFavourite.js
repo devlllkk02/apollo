@@ -1,6 +1,6 @@
-// ------ Profile Collection ------
+// ------ Profile Favourite ------
 import React, { useState } from "react";
-import "./ProfileCollection.scss";
+import "./ProfileFavourite.scss";
 
 import Navbar from "../../Navbar/Navbar";
 import ProfileHeader from "../ProfileHeader/ProfileHeader";
@@ -24,24 +24,18 @@ function ProfileCollection() {
   };
 
   return (
-    <div className="profileCollection">
+    <div className="profileFavourite">
       <Navbar />
       <ProfileHeader />
-      <ProfileNavigation page="collection" />
+      <ProfileNavigation page="favourite" />
       {/* Profile Body */}
-      <div className="profileCollection__body">
-        <div className="profileCollection__sidebar" style={SetSideMenuStyles()}>
+      <div className="profileFavourite__body">
+        {/* <div className="profileFavourite__sidebar" style={SetSideMenuStyles()}>
           <ProfileSidebar sideMenu={sideMenu} SetSideMenu={SetSideMenu} />
-        </div>
-        <div className="profileCollection__content">
-          <div className="profileCollection__content__container">
-            <ItemCard image="/images/banner.jpg"/>
-            <ItemCard image="/images/banner.jpg"/>
-            <ItemCard image="/images/banner.jpg"/>
-            <ItemCard image="/images/banner.jpg"/>
-            <ItemCard image="/images/banner.jpg"/>
-            <ItemCard image="/images/banner.jpg"/>
-            <ItemCard image="/images/banner.jpg"/>
+        </div> */}
+        <div className="profileFavourite__content">
+          <div className="profileFavourite__content__container">
+            <p>You do not have favourite items</p>
           </div>
         </div>
       </div>

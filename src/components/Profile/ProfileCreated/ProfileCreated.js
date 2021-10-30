@@ -1,6 +1,6 @@
-// ------ Profile Collection ------
+// ------ Profile Created ------
 import React, { useState } from "react";
-import "./ProfileCollection.scss";
+import "./ProfileCreated.scss";
 
 import Navbar from "../../Navbar/Navbar";
 import ProfileHeader from "../ProfileHeader/ProfileHeader";
@@ -24,24 +24,24 @@ function ProfileCollection() {
   };
 
   return (
-    <div className="profileCollection">
+    <div className="profileCreated">
       <Navbar />
       <ProfileHeader />
-      <ProfileNavigation page="collection" />
+      <ProfileNavigation page="created" />
       {/* Profile Body */}
-      <div className="profileCollection__body">
-        <div className="profileCollection__sidebar" style={SetSideMenuStyles()}>
+      <div className="profileCreated__body">
+        <div className="profileCreated__sidebar" style={SetSideMenuStyles()}>
           <ProfileSidebar sideMenu={sideMenu} SetSideMenu={SetSideMenu} />
         </div>
-        <div className="profileCollection__content">
-          <div className="profileCollection__content__container">
-            <ItemCard image="/images/banner.jpg"/>
-            <ItemCard image="/images/banner.jpg"/>
-            <ItemCard image="/images/banner.jpg"/>
-            <ItemCard image="/images/banner.jpg"/>
-            <ItemCard image="/images/banner.jpg"/>
-            <ItemCard image="/images/banner.jpg"/>
-            <ItemCard image="/images/banner.jpg"/>
+        <div className="profileCreated__content">
+          <div className="profileCreated__content__container">
+            <ItemCard image="/images/ocean.jpg" />
+            <ItemCard image="/images/ocean.jpg" />
+            <ItemCard image="/images/ocean.jpg" />
+            <ItemCard image="/images/ocean.jpg" />
+            <ItemCard image="/images/ocean.jpg" />
+            <ItemCard image="/images/ocean.jpg" />
+            <ItemCard image="/images/ocean.jpg" />
           </div>
         </div>
       </div>

@@ -1,4 +1,4 @@
-// ------ Profile Navigation------
+// ------ Profile Navigation ------
 @import "../../../Theme.scss";
 
 .profile__navigation {
@@ -39,6 +39,7 @@
           width: calc(100% - 100px);
           //   background-color: lightseagreen;
           @include flexbox;
+
           p {
             margin: 0px;
             color: $dark-grey;

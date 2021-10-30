@@ -1,0 +1,40 @@
+// ------ Profile Collection ------
+@import "../../../Theme.scss";
+
+.profileSidebar {
+  width: 100%;
+  min-height: 800px;
+
+  // background-color: lightgray;
+  @include flexbox;
+  .profileSidebar__content {
+    min-height: 800px;
+    width: calc(100% - 50px);
+    // background-color: lightseagreen;
+
+    .profileSidebar__wrapper {
+      // background-color: lightgreen;
+      @include flexbox;
+      p {
+        margin: 0px;
+        color: $dark-grey;
+        font-size: $font-small;
+        text-transform: uppercase;
+      }
+    }
+  }
+  .profileSidebar__button {
+    min-height: 800px;
+    width: 50px;
+    // padding-top: 20px;
+    // background-color: lightpink;
+
+    .profileSidebar__button__container {
+      // background-color: lightcyan;
+      height: 25px;
+      @include flexbox;
+      align-items: flex-start;
+      cursor: pointer;
+    }
+  }
+}

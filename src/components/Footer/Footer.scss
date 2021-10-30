@@ -1,0 +1,15 @@
+// ------ Footer ------
+@import "../../Theme.scss";
+
+.footer{
+    width: 100%;
+    height: 50px;
+    border-top: $border-light;
+    @include flexbox;
+
+    p{
+        margin: 0px;
+        font-size: $font-extra-small;
+        color: $dark-grey;
+    }
+}
