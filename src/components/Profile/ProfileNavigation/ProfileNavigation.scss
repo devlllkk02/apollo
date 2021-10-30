@@ -1,0 +1,167 @@
+// ------ Profile Navigation------
+@import "../../../Theme.scss";
+
+.profile__navigation {
+  width: 100%;
+  height: 50px;
+  margin-top: 10px;
+  //   background-color: coral;
+  @include flexbox;
+  border-top: $border-light;
+  border-bottom: $border-light;
+
+  .profile__navigation__container {
+    height: 100%;
+    width: 80%;
+    // background-color: darkcyan;
+    @include flexbox;
+    justify-content: space-between;
+    .profile__navigation__collection {
+      width: 200px;
+      height: 100%;
+      //   background-color: aquamarine;
+      @include flexbox;
+      flex-direction: column;
+      .profile__navigation__collection__content {
+        width: 100%;
+        height: 45px;
+        // background-color: lightyellow;
+        @include flexbox;
+        .profile__navigation__collection__icon {
+          height: 100%;
+          width: 50px;
+          //   background-color: lightgreen;
+          @include flexbox;
+          font-size: $font-small;
+        }
+        .profile__navigation__collection__text {
+          height: 100%;
+          width: calc(100% - 100px);
+          //   background-color: lightseagreen;
+          @include flexbox;
+          p {
+            margin: 0px;
+            color: $dark-grey;
+            font-size: $font-small;
+            cursor: pointer;
+          }
+        }
+        .profile__navigation__collection__amount {
+          height: 100%;
+          width: 50px;
+          //   background-color: lightgreen;
+
+          @include flexbox;
+          p {
+            margin: 0px;
+            color: $dark-grey;
+            font-size: $font-small;
+          }
+        }
+      }
+      .profile__navigation__collection__border {
+        width: 100%;
+        height: 5px;
+        border-radius: 10px 10px 0px 0px;
+      }
+    }
+    .profile__navigation__created {
+      width: 200px;
+      height: 100%;
+      //   background-color: lime;
+      @include flexbox;
+      flex-direction: column;
+      .profile__navigation__created__content {
+        width: 100%;
+        height: 45px;
+        // background-color: lightyellow;
+        @include flexbox;
+        .profile__navigation__created__icon {
+          height: 100%;
+          width: 50px;
+          //   background-color: lightgreen;
+          @include flexbox;
+          font-size: $font-small;
+        }
+        .profile__navigation__created__text {
+          height: 100%;
+          width: calc(100% - 100px);
+          //   background-color: lightseagreen;
+          @include flexbox;
+          p {
+            margin: 0px;
+            color: $dark-grey;
+            font-size: $font-small;
+            cursor: pointer;
+          }
+        }
+        .profile__navigation__created__amount {
+          height: 100%;
+          width: 50px;
+          //   background-color: lightgreen;
+
+          @include flexbox;
+          p {
+            margin: 0px;
+            color: $dark-grey;
+            font-size: $font-small;
+          }
+        }
+      }
+      .profile__navigation__created__border {
+        width: 100%;
+        height: 5px;
+        border-radius: 10px 10px 0px 0px;
+      }
+    }
+    .profile__navigation__favourite {
+      width: 200px;
+      height: 100%;
+      //   background-color: bisque;
+      @include flexbox;
+      flex-direction: column;
+      .profile__navigation__favourite__content {
+        width: 100%;
+        height: 45px;
+        // background-color: lightyellow;
+        @include flexbox;
+        .profile__navigation__favourite__icon {
+          height: 100%;
+          width: 50px;
+          //   background-color: lightgreen;
+          @include flexbox;
+          font-size: $font-small;
+        }
+        .profile__navigation__favourite__text {
+          height: 100%;
+          width: calc(100% - 100px);
+          //   background-color: lightseagreen;
+          @include flexbox;
+          p {
+            margin: 0px;
+            color: $dark-grey;
+            font-size: $font-small;
+            cursor: pointer;
+          }
+        }
+        .profile__navigation__favourite__amount {
+          height: 100%;
+          width: 50px;
+          //   background-color: lightgreen;
+
+          @include flexbox;
+          p {
+            margin: 0px;
+            color: $dark-grey;
+            font-size: $font-small;
+          }
+        }
+      }
+      .profile__navigation__favourite__border {
+        width: 100%;
+        height: 5px;
+        border-radius: 10px 10px 0px 0px;
+      }
+    }
+  }
+}

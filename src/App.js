@@ -1,11 +1,13 @@
 // ------ App ------
 import "./App.scss";
-import Profile from "./components/Profile/Profile";
+import ProfileCollection from "./components/Profile/ProfileCollection/ProfileCollection";
+
 
 function App() {
   return (
     <div className="App">
-      <Profile />
+      <ProfileCollection />
+
     </div>
   );
 }
